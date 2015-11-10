@@ -102,11 +102,11 @@
 						Меню
 					</div>
 					<ul>
-						<li class="active"><a href="/">Главная</a></li>
-						<li><a href="/pages/about">О компании</a></li>
-						<li><a href="/categories">Продукция</a></li>
-						<li><a href="/news">Новости</a></li>
-						<li><a href="/pages/contacts">Контакты</a></li>
+						<li <?php if($_SERVER['REQUEST_URI'] =='/') echo 'class="active"'; ?>><a href="/">Главная</a></li>
+						<li <?php if($_SERVER['REQUEST_URI'] =='/pages/about') echo 'class="active"'; ?>><a href="/pages/about">О компании</a></li>
+						<li <?php if($_SERVER['REQUEST_URI'] =='/categories') echo 'class="active"'; ?>><a href="/categories">Продукция</a></li>
+						<li <?php if($_SERVER['REQUEST_URI'] =='/news') echo 'class="active"'; ?>><a href="/news">Новости</a></li>
+						<li <?php if($_SERVER['REQUEST_URI'] =='/pages/contacts') echo 'class="active"'; ?>><a href="/pages/contacts">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -117,7 +117,7 @@
 		<?php echo $this->fetch('content') ?>
 		<footer>
 			<div class="cr">
-				<a class="fl_l" href="#">Вакансии</a>
+				<a class="fl_l" href="/pages/vacancies">Вакансии</a>
 				<div class="center">
 					<p>Разработано в <a>Астана Креатив</a></p>
 					<span>Copyright © 2015, Все права защищены </span>
