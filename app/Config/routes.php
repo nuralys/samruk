@@ -29,6 +29,7 @@
 
 	Router::connect('/products', array('controller' => 'products', 'action' => 'index'));
 	Router::connect('/products/*', array('controller' => 'products', 'action' => 'view'));
+	Router::connect('/product/*', array('controller' => 'products', 'action' => 'view'));
 	Router::connect('/category/*', array('controller' => 'categories', 'action' => 'view'));
 	Router::connect('/news', array('controller' => 'news', 'action' => 'index'));
 	Router::connect('/news/*', array('controller' => 'news', 'action' => 'view'));

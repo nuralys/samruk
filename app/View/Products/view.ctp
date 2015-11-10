@@ -10,33 +10,25 @@
 					</ul> -->
 					<div class="prod_list">
 					<?php //debug($parent_cat) ?>
-						<img src="/img/category/thumbs/<?=$parent_cat[0]['Category']['img'] ?>">
+						<img src="/img/category/thumbs/<?=$parent_cat_data[0]['Category']['img'] ?>">
 						<ul>
-						<?php foreach($child_cats as $cat): ?>
-							<li><a href=""><?=$cat['Category']['title'] ?></a></li>
+						<?php foreach($neighbour_cats as $cat): ?>
+							<li><a href="/product/<?=$cat['Category']['id'] ?>"><?=$cat['Category']['title'] ?></a></li>
 						<?php endforeach ?>
 						</ul>
 					</div>
 				</div>
 				<div class="item_part">
-				<?php //foreach(): ?>
+				<?php foreach($products as $product): ?>
 					<div class="p_item">
 						<div class="wr">
-							<span>NETYS PL</span>
-							<p>от 600 до 800 
-							многорозеточный ИБП для 
-							быстрого подключения 
-							различного оборудования</p>
-							<ul>
-								<li>от 600 до 800 </li>
-								<li>многорозеточный ИБП для </li>
-								<li>быстрого подключения </li>
-								<li>различного оборудования</li>
-							</ul>
-							<img src="img/item.jpg">
+							<span><?=$product['Product']['title'] ?></span>
+							<p><?=$product['Product']['short_description'] ?></p>
+							<p><?=$product['Product']['body'] ?></p>
+							<img src="/img/product/thumbs/<?=$product['Product']['img'] ?>">
 						</div>
 					</div>
-					<?php //endforeach ?>
+					<?php endforeach ?>
 
 				</div>
 			</div>
