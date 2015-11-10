@@ -47,11 +47,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<li><a href="/admin/products">Продукция</a></li>
 				<li><a href="/admin/news">Новости</a></li>
 				<li><a href="/admin/pages/edit/2">Контакты</a></li>
+				<li><a href="/admin/links">Быстрые ссылки</a></li>
 			</ul>
 		</nav>
 		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->Session->flash('good'); ?>
+			<?php echo $this->Session->flash('bad'); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>

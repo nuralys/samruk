@@ -31,6 +31,7 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	public $uses = array('App', 'Link');
 	public $components = array('DebugKit.Toolbar', 'Session', 'Auth' => array(
             'loginRedirect' => '/admin/',
             'logoutRedirect' => '/',
@@ -45,10 +46,8 @@ class AppController extends Controller {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		
-	
-		
-		
-		
+		$links = $this->Link->find('all');
+
 		// debug($this->request->params['prefix']);
 		$admin = (isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin') ? 'admin/' : false;
 		if(!$admin) $this->Auth->allow();
@@ -58,7 +57,7 @@ class AppController extends Controller {
 			$this->layout = 'index';
 		}
 
-		$this->set(compact('admin'));
+		$this->set(compact('admin', 'links'));
 
 	}
 }

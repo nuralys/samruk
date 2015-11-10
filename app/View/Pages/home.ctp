@@ -100,27 +100,6 @@
 					</div>
 				</div>
 			</div>
-			<aside>
-				<div class="as_row">
-					<div class="wr">
-						<a class="t_heading" href="#">Быстрые ссылки</a>
-						<ul class="as_list">
-							<li><a href="#">Выбор ИБП</a></li>
-							<li><a href="#">Инструкции по эксплуатации Диаграммы для CAD</a></li>
-							<li><a href="#">Руководство по применению и техническое руководство</a></li>
-							<li><a href="#">Программное обеспечение для ИБП</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="as_row">
-					<div class="wr">
-						<a class="t_heading" href="#">Производители</br>(партнеры)</a>
-						<ul class="as_img">
-							<li></li>
-							<li class="p2"></li>
-							<li class="p3"></li>
-						</ul>
-					</div>
-				</div>
-			</aside>
+			<?php echo $this->element('links') ?>
+			
 		</div>
