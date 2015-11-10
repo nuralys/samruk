@@ -33,10 +33,13 @@ public $uses = array('Page', 'News');
 
 	public function home() {
 		$this->view = 'home';
-
+		$news = $this->News->find('all', array(
+			'limit' => 3,
+			'order' => array('date' => 'desc')
+			));
 		$title_for_layout = 'Главная';
 
-		$this->set(compact('title_for_layout'));
+		$this->set(compact('title_for_layout', 'news'));
 
 	}
 	public function index($page_alias = null){

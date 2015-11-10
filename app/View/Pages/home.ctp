@@ -54,51 +54,23 @@
 		</div>
 		<div class="cr content">
 			<div class="main">
+				<?php foreach($news as $item): ?>
 				<div class="i_row">
-					<img src="img/new1.jpg"/>
+					<img src="/img/news/thumbs/<?=$item['News']['img'] ?>"/>
 					<div class="i_text">
 						<div class="wr">
 							<div class="i_top">
-							<a class="heading" href="#">Всё в мире движется быстрее, будь вместе с Socomec быстрее, будь вместе с Socomec</a>
-							<p class="des">Система DIRIS Digiware является центром технологических инноваций, которые производят революционные изменения в измерении, предоставляют широкий выбор возможностей применения и делают лёгкими...</p>
+							<a class="heading" href="/news/<?=$item['News']['id'] ?>"><?=$item['News']['title'] ?></a>
+							<p class="des"><?= $this->Text->truncate(strip_tags($item['News']['body']), 420, array('ellipsis' => '...', 'exact' => true)) ?></p>
 							</div>
 							<div class="i_bot">
-								<span>Дата: 23-10-2015</span>
-								<a href="">Читать полностью</a>
+								<span>Дата: <?=$item['News']['date'] ?></span>
+								<a href="/news/<?=$item['News']['id'] ?>">Читать полностью</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="i_row">
-					<img src="img/new1.jpg"/>
-					<div class="i_text">
-						<div class="wr">
-							<div class="i_top">
-							<a class="heading" href="#">Всё в мире движется быстрее, будь вместе с Socomec быстрее, будь вместе с Socomec</a>
-							<p class="des">Система DIRIS Digiware является центром технологических инноваций, которые производят революционные изменения в измерении, предоставляют широкий выбор возможностей применения и делают лёгкими...</p>
-							</div>
-							<div class="i_bot">
-								<span>Дата: 23-10-2015</span>
-								<a href="">Читать полностью</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="i_row">
-					<img src="img/new1.jpg"/>
-					<div class="i_text">
-						<div class="wr">
-							<div class="i_top">
-							<a class="heading" href="#">Всё в мире движется быстрее, будь вместе с Socomec быстрее, будь вместе с Socomec</a>
-							<p class="des">Система DIRIS Digiware является центром технологических инноваций, которые производят революционные изменения в измерении, предоставляют широкий выбор возможностей применения и делают лёгкими...</p>
-							</div>
-							<div class="i_bot">
-								<span>Дата: 23-10-2015</span>
-								<a href="">Читать полностью</a>
-							</div>
-						</div>
-					</div>
-				</div>
+			<?php endforeach ?>
 			</div>
 			<?php echo $this->element('links') ?>
 			

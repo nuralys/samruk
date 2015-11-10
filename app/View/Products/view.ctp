@@ -10,7 +10,7 @@
 					</ul> -->
 					<div class="prod_list">
 					<?php //debug($parent_cat) ?>
-						<img src="/img/category/thumbs/<?=$parent_cat_data[0]['Category']['img'] ?>">
+						<img src="/img/category/<?=$parent_cat_data[0]['Category']['img'] ?>">
 						<ul>
 						<?php foreach($neighbour_cats as $cat): ?>
 							<li><a href="/product/<?=$cat['Category']['id'] ?>"><?=$cat['Category']['title'] ?></a></li>
@@ -25,7 +25,7 @@
 							<span><?=$product['Product']['title'] ?></span>
 							<p><?=$product['Product']['short_description'] ?></p>
 							<p><?=$product['Product']['body'] ?></p>
-							<img src="/img/product/thumbs/<?=$product['Product']['img'] ?>">
+							<img src="/img/product/<?=$product['Product']['img'] ?>">
 						</div>
 					</div>
 					<?php endforeach ?>

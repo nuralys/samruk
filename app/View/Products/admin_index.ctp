@@ -5,4 +5,3 @@
 			<?php echo $this->Form->postLink('Удалить', array('action' => 'admin_delete', $product['Product']['id']), array('confirm' => 'Подтвердите удаление')); ?></li>
 	<?php endforeach ?>
 </ul>
-<?php debug($products) ?>

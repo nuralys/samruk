@@ -13,9 +13,9 @@
 		<div class="wr">
 			<a class="t_heading" href="#">Производители</br>(партнеры)</a>
 			<ul class="as_img">
-				<li></li>
-				<li class="p2"></li>
-				<li class="p3"></li>
+				<li><img src="/img/partner1.jpg"/></li>
+				<li><img src="/img/partner2.jpg"/></li>
+				<li><img src="/img/partner3.jpg"/></li>
 			</ul>
 		</div>
 	</div>

@@ -43,7 +43,7 @@ class Product extends AppModel{
 		if(!move_uploaded_file($file['img']['tmp_name'], $path)){
 			return false;
 		}
-		$this->resizeImg($path, $path_th, 286, 190, $ext);
+		$this->resizeImg($path, $path_th, 185, 139, $ext);
 		$this->data[$this->alias]['img'] = $fileName;
 		return true;
 	}
