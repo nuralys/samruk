@@ -5,12 +5,13 @@ class CategoriesController extends AppController{
 	public $uses = array('Category', 'Product');
 
 	public function index($cat_id = null){
+		$title_for_layout = 'Продукция';
 		if(is_null($cat_id)){
 			$categories = $this->Category->find('all', array(
 				'conditions' => array('parent_id' => 0)
 				));
 			
-			$this->set(compact('categories'));
+			$this->set(compact('categories', 'title_for_layout'));
 		}
 	}
 	
