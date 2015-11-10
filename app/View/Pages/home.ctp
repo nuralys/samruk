@@ -61,7 +61,7 @@
 						<div class="wr">
 							<div class="i_top">
 							<a class="heading" href="/news/<?=$item['News']['id'] ?>"><?=$item['News']['title'] ?></a>
-							<p class="des"><?= $this->Text->truncate(strip_tags($item['News']['body']), 420, array('ellipsis' => '...', 'exact' => true)) ?></p>
+							<p class="des"><?= $this->Text->truncate(strip_tags($item['News']['body']), 250, array('ellipsis' => '...', 'exact' => true)) ?></p>
 							</div>
 							<div class="i_bot">
 								<span>Дата: <?=$item['News']['date'] ?></span>

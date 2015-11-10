@@ -9,7 +9,7 @@
 						<div class="wr">
 							<div class="i_top">
 							<a class="heading" href="/news/<?=$news_item['News']['id'] ?>"><?=$news_item['News']['title'] ?></a>
-							<p class="des"><?= $this->Text->truncate(strip_tags($news_item['News']['body']), 420, array('ellipsis' => '...', 'exact' => true)) ?>
+							<p class="des"><?= $this->Text->truncate(strip_tags($news_item['News']['body']), 250, array('ellipsis' => '...', 'exact' => true)) ?>
 							</p>
 							</div>
 							<div class="i_bot">
