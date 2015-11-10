@@ -273,6 +273,9 @@ header{
 	overflow:hidden;
 	margin-bottom:9px;
 }
+.i_text .heading:hover{
+	text-decoration:underline;
+}
 .i_text .des{
 	font-size:14px;
 	line-height:18px;
@@ -295,9 +298,6 @@ header{
 	color:#088f08;
 	text-decoration:underline;
 	float:right;
-}
-.i_text .heading:hover{
-	text-decoration:none;
 }
 /*end main page*/
 
@@ -392,6 +392,7 @@ aside{
     max-height: 82px;
     display: inline-block;
     vertical-align: middle;
+	max-width: 100%;
 }
 .prod a{
 	text-align:center;
@@ -435,13 +436,19 @@ aside{
 	margin:15px auto 30px auto;
 }
 .prod_list ul li{
-	float:left;
-	margin:0 15px 18px 15px;
+	float: left;
+    width: 32%;
+    margin-right: 2%;
+	margin-bottom:14px;
+}
+.prod_list ul li:nth-child(3n){
+	margin-right:0px;
 }
 .prod_list ul li a{
 	background-color:#0d940d;
 	color:#fff;
-	padding:8px 14px;
+	text-align:center;
+	padding:8px 0px;
 	display:block;
 	font-size:15px;
 	border-radius:4px;
@@ -453,6 +460,7 @@ aside{
     float: left;
     width: 32%;
     margin-right: 2%;
+	margin-bottom: 18px;
 }
 .p_item .wr{
 	background-color: #fff;
@@ -517,6 +525,49 @@ aside{
 }
 /*end production*/
 
+/*begin contacts*/
+.contacts img{
+	width:100%;
+	margin-bottom:18px;
+}
+.contacts .heading{
+	color:#088f08;
+	font-size:16px;
+	display:block;
+	margin-bottom:12px;
+	margin-top:20px;
+}
+.contacts ul li{
+    margin-bottom: 10px;
+    background-image: url(../img/con.png);
+    font-size: 14px;
+    line-height: 19px;
+}
+.contacts ul li span{
+    border-radius: 50%;
+    border: 1px solid #e4e4e4;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    float: left;
+    display: block;
+    background-color: #fff;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+}
+.home{
+	background-image:url(../img/home.png);
+}
+.tel{
+	background-image:url(../img/tel.png);
+}
+.contacts ul li  .mail {
+    background-image: url(../img/mail.png);
+    background-position: top 4px left 4px;
+}
+/*end contacts*/
+
 /*begin footer*/
 footer {
 	border-bottom:12px solid #088f08;
@@ -563,6 +614,19 @@ footer .center p a{
 	.i_bot a{
 		display:none;
 	}
+	.p_item .wr{
+		padding:12px;
+	}
+	.prod_list ul li{
+		 width: 46%;
+		margin-right: 8%;
+	}
+	.prod_list ul li:nth-child(3n){
+		margin-right:8%;
+	}
+	.prod_list ul li:nth-child(2n){
+		margin-right:0;
+	}
 }
 @media screen and (max-width: 770px) {
 	.nav ul li {
@@ -593,7 +657,19 @@ footer .center p a{
 	.as_row:first-child .wr{
 		margin-right:25px;
 	}
-
+	.prod_list ul li{
+		width: 32%;
+		margin-right: 2%;
+	}
+	.prod_list ul li:nth-child(3n){
+		margin-right:0px;
+	}
+	.prod_list ul li:nth-child(2n){
+		margin-right:2%;
+	}
+	.prod_list ul li a{
+		font-size:14px;
+	}
 }
 @media screen and (max-width: 600px) {
 	.cr{
@@ -654,6 +730,26 @@ footer .center p a{
 	.i_text{
 		width:51%;
 	}
+	.prod_list ul li{
+		 width: 48%;
+		margin-right: 4%;
+	}
+	.prod_list ul li:nth-child(3n){
+		margin-right:4%;
+	}
+	.prod_list ul li:nth-child(2n){
+		margin-right:0;
+	}
+	.p_item{
+		width:48%;
+		margin-right:4%;
+	}
+	.p_item:nth-child(2n){
+		margin-right:0;
+	}
+	.p_item:nth-child(3n){
+		margin-right:4%;
+	}
 }
 @media screen and (max-width: 450px) {
 	.i_row{
@@ -678,6 +774,12 @@ footer .center p a{
 	.as_row:first-child .wr{
 		margin-right:2px;
 		margin-bottom:25px;
+	}
+	.prod{
+		width:100%;
+	}
+	.prod .wr{
+		margin-right:2px;
 	}	
 	footer .fl_l{
 		display:none;
@@ -685,4 +787,12 @@ footer .center p a{
 	footer .center{
 		margin-left:0px;
 	}
+	.p_item{
+		width:100%;
+		margin-right:0;
+	}
+	.p_item:nth-child(2n,.p_item:nth-child(3n){{
+		margin-right:0;
+	}
+
 }
