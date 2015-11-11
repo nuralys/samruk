@@ -25,7 +25,7 @@
 							<span><?=$product['Product']['title'] ?></span>
 							<p><?=$product['Product']['short_description'] ?></p>
 							<p><?=$product['Product']['body'] ?></p>
-							<img src="img/item.jpg">
+							<img src="/img/product/<?=$product['Product']['img'] ?>">
 						</div>
 					</div>
 					<?php endforeach ?>
