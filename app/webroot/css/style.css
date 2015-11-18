@@ -246,19 +246,19 @@ header{
 		height:350px;
 	}
 	.iosSlider .slider #item1 {
-		background-image: url(../img/slider1.jpg);
+		background-image: url(../img/slide_1.jpg);
 	}
 	
 	.iosSlider .slider #item2 {
-		 background-image: url(../img/slider2.jpg);
+		 background-image: url(../img/slide_2.jpg);
 	}
 	
 	.iosSlider .slider #item3 {
-		 background-image: url(../img/slider1.jpg);
+		 background-image: url(../img/slide_3.jpg);
 	}
 	
 	.iosSlider .slider #item4 {
-		 background-image: url(../img/slider2.jpg);;
+		 background-image: url(../img/slide_4.jpg);;
 	}
 
 	.iosSlider .slider .item .text1 {

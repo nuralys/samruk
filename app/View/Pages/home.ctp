@@ -7,40 +7,41 @@
 							<img src="img/socomec.png"/>
 						</div>				
 						<div class = 'text2'>
-							<a href="#">Перейти к продукциям</a>
+							<a href="/category/1">Перейти к продукциям</a>
 						</div>	
 					</div>	
 				</div>			
-				<div class = 'item' id = 'item1'>			
+				<div class = 'item' id = 'item2'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Мы работаем с мировыми брэндами как SOCOMEC</span>
-							<img src="img/socomec.png"/>
+							<span>Tesar s.r.l. - итальянский производитель сухих
+							трансформаторов с литой обмоткой из эпоксидной смолы</span>
+							<img src="img/tesar.png"/>
 						</div>				
 						<div class = 'text2'>
-							<a href="#">Перейти к продукциям</a>
+							<a href="/category/4">Перейти к продукциям</a>
 						</div>	
 					</div>	
 				</div>				
-				<div class = 'item' id = 'item1'>			
+				<div class = 'item' id = 'item3'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Мы работаем с мировыми брэндами как SOCOMEC</span>
-							<img src="img/socomec.png"/>
+							<span>Ferbo Energy происходит благодаря простому подходу - обеспечения высокого качества продукции</span>
+							<img src="img/ferbo.png"/>
 						</div>				
 						<div class = 'text2'>
-							<a href="#">Перейти к продукциям</a>
+							<a href="/category/2">Перейти к продукциям</a>
 						</div>	
 					</div>	
 				</div>			
-				<div class = 'item' id = 'item1'>			
+				<div class = 'item' id = 'item4'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Мы работаем с мировыми брэндами как SOCOMEC</span>
-							<img src="img/socomec.png"/>
+							<span>Разбрызгиватели Ferbo rain имеют высокий инновационный потенциал</span>
+							<img src="img/ferbo.png"/>
 						</div>				
 						<div class = 'text2'>
-							<a href="#">Перейти к продукциям</a>
+							<a href="/category/3">Перейти к продукциям</a>
 						</div>	
 					</div>	
 				</div>			

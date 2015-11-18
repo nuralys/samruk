@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title><?php echo $title_for_layout ?> - Samruk</title>
+		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
 		<?php 
 	echo $this->fetch('css');
 	echo $this->fetch('script');
