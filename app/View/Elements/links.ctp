@@ -14,8 +14,8 @@
 			<a class="t_heading" href="#">Производители</br>(партнеры)</a>
 			<ul class="as_img">
 				<li><img src="/img/partner1.jpg"/></li>
-				<li><img src="/img/partner2.jpg"/></li>
-				<li><img src="/img/partner3.jpg"/></li>
+				<li><img src="/img/ferbo.png"/></li>
+				<li><img src="/img/partner4.jpg"/></li>
 			</ul>
 		</div>
 	</div>
