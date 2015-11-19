@@ -9,7 +9,7 @@
 	echo $this->fetch('css');
 	echo $this->fetch('script');
 	echo $this->Html->css(array('style','jquery.fancybox'));
-	echo $this->Html->script(array('jquery-1.10.1.min', 'jquery.easing-1.3', 'jquery.iosslider.min','jquery.fancybox.js?v=2.1.5'));
+	echo $this->Html->script(array('jquery-1.10.1.min', 'jquery.easing-1.3', 'jquery.iosslider.min','jquery.fancybox.js?v=2.1.5','doubletaptogo.js'));
 	 ?>
 		<script type="text/javascript">
 		$(document).ready(function() {
@@ -286,20 +286,19 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<nav class="nav">
-					<div class="menu">
-						Меню
-					</div>
-					<ul>
-						<li <?php if($_SERVER['REQUEST_URI'] =='/') echo 'class="active"'; ?>><a href="/">Главная</a></li>
-						<li <?php if($_SERVER['REQUEST_URI'] =='/pages/about') echo 'class="active"'; ?>><a href="/pages/about">О компании</a></li>
-						<li <?php if($_SERVER['REQUEST_URI'] =='/categories') echo 'class="active"'; ?>><a href="/categories">Продукция</a></li>
-						<li <?php if($_SERVER['REQUEST_URI'] =='/news') echo 'class="active"'; ?>><a href="/news">Новости</a></li>
-						<li <?php if($_SERVER['REQUEST_URI'] =='/pages/contacts') echo 'class="active"'; ?>><a href="/pages/contacts">Контакты</a></li>
-					</ul>
-				</nav>
+				</div>				
 			</div>
+			<nav id="nav" role="navigation">
+				<a href="#nav" title="Show navigation">Меню</a>
+				<a href="#" title="Hide navigation">Скрыть меню</a>
+				<ul>
+					<li <?php if($_SERVER['REQUEST_URI'] =='/') echo 'class="active"'; ?>><a href="/">Главная</a></li>
+					<li <?php if($_SERVER['REQUEST_URI'] =='/pages/about') echo 'class="active"'; ?>><a href="/pages/about">О компании</a></li>
+					<li <?php if($_SERVER['REQUEST_URI'] =='/categories') echo 'class="active"'; ?>><a href="/categories">Продукция</a></li>
+					<li <?php if($_SERVER['REQUEST_URI'] =='/news') echo 'class="active"'; ?>><a href="/news">Новости</a></li>
+					<li <?php if($_SERVER['REQUEST_URI'] =='/pages/contacts') echo 'class="active"'; ?>><a href="/pages/contacts">Контакты</a></li>
+				</ul>
+			</nav>
 		</header>
 		<?php echo $this->Session->flash(); ?>
 		<?php echo $this->Session->flash('good'); ?>
@@ -315,5 +314,11 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			$( function()
+			{
+				$( '#nav li:has(ul)' ).doubleTapToGo();
+			});
+		</script>
 	</body>
 </html>
