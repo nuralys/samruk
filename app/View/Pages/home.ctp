@@ -14,8 +14,7 @@
 				<div class = 'item' id = 'item2'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Tesar s.r.l. - итальянский производитель сухих
-							трансформаторов с литой обмоткой из эпоксидной смолы</span>
+							<span>Tesar s.r.l. - итальянский производитель сухих и масляных трансформаторов</span>
 							<img src="img/tesar.png"/>
 						</div>				
 						<div class = 'text2'>
