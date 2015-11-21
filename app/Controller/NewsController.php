@@ -3,7 +3,9 @@
 class NewsController extends AppController{
 
 	public function admin_index(){
-		$news = $this->News->find('all');
+		$news = $this->News->find('all', array(
+			'order' => array('date' => 'desc')
+		));
 		
 		$this->set(compact('news'));
 	}
@@ -70,7 +72,7 @@ class NewsController extends AppController{
 		
 		$title_for_layout = 'Новости';
 		$news = $this->News->find('all', array(
-			'order' => array('created' => 'desc')
+			'order' => array('date' => 'desc')
 			));
 		$this->set(compact('news', 'title_for_layout'));
 	}

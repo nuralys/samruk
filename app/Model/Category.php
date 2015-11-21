@@ -7,10 +7,6 @@ class Category extends AppModel{
 			'rule' => 'notEmpty',
 			'message' => 'Введите название'
 		),
-		'body' => array(
-			'rule' => 'notEmpty',
-			'message' => 'Введите текст'
-		),
 		'img' => array(
 			'uploadError' => array(
 				'rule' => 'uploadError',
