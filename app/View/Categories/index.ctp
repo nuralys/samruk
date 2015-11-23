@@ -7,7 +7,7 @@
 						<div class="wr">
 							<div class="pr_img"><img src="/img/category/<?=$category['Category']['img'] ?>"></div>
 							<a href="/category/<?=$category['Category']['id'] ?>"><?=$category['Category']['title'] ?></a>
-							<!-- <p><?=$category['Category']['body'] ?></p> -->
+							<p><?=$category['Category']['body'] ?></p>
 						</div>
 					</div>
 					<?php endforeach ?>
