@@ -3,7 +3,7 @@
 				<div class = 'item' id = 'item1'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Мы работаем с мировыми брэндами как SOCOMEC</span>
+							<span>Защита, надежность и качество электропитания </span>
 							<img src="img/socomec.png"/>
 						</div>				
 						<div class = 'text2'>
@@ -14,8 +14,7 @@
 				<div class = 'item' id = 'item2'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Tesar s.r.l. - итальянский производитель сухих
-							трансформаторов с литой обмоткой из эпоксидной смолы</span>
+							<span>Лидер итальянского трансформаторостроения </span>
 							<img src="img/tesar.png"/>
 						</div>				
 						<div class = 'text2'>
@@ -26,7 +25,8 @@
 				<div class = 'item' id = 'item3'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Ferbo Energy происходит благодаря простому подходу - обеспечения высокого качества продукции</span>
+							<span>Страсть к энергии… </br>
+							дизельные электростанции FERBO </span>
 							<img src="img/ferbo.png"/>
 						</div>				
 						<div class = 'text2'>
@@ -37,7 +37,7 @@
 				<div class = 'item' id = 'item4'>			
 					<div class="cr">
 						<div class = 'text1'>
-							<span>Разбрызгиватели Ferbo rain имеют высокий инновационный потенциал</span>
+							<span>Богатый урожай с полей обеспечит оросительная система FERBO Rain</span>
 							<img src="img/ferbo.png"/>
 						</div>				
 						<div class = 'text2'>
