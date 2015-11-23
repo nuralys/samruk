@@ -543,6 +543,13 @@ aside{
 	font-size:14px;
 	line-height:16px;
 }
+.prod p{
+	height:90px;
+	overflow:hidden;
+	font-size: 14px;
+    line-height: 18px;
+    color: #727272;
+}
 .prod a:hover{
 	text-decoration:underline;
 }
