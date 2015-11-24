@@ -16,6 +16,7 @@ class CategoriesController extends AppController{
 	}
 	
 	public function view($cat_id = null){
+		// $data = $this->Category->
 		$child_cats = $this->Category->find('all', array(
 				'conditions' => array('parent_id' => $cat_id)
 				));
@@ -28,8 +29,11 @@ class CategoriesController extends AppController{
 		$products = $this->Product->find('all', array(
 			'conditions' => array('Product.category_id' => $ids)
 			));
+		$title_for_layout = $parent_cat[0]['Category']['title'];
+		$meta['keywords'] = $parent_cat[0]['Category']['keywords'];
+		$meta['description'] = $parent_cat[0]['Category']['description'];
 		 //debug($products);
-		$this->set(compact('child_cats', 'parent_cat', 'products'));
+		$this->set(compact('child_cats', 'parent_cat', 'products', 'title_for_layout', 'meta'));
 	}
 
 	protected function __ids($child_cats){

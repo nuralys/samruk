@@ -3,9 +3,10 @@
 		<h2>Редактирование новости</h2>
 	</div>
 <?php 
-
 echo $this->Form->create('Category', array('type' => 'file'));
 echo $this->Form->input('title', array('label' => 'Название:'));
+echo $this->Form->input('keywords', array('label' => 'Ключевые слова(для поисковиков):'));
+echo $this->Form->input('description', array('label' => 'Описание(для поисковиков):'));
 ?>
 <div class="input select">
 	<label for="CategoryParentId">Категория:</label>
