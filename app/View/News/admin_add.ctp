@@ -6,6 +6,8 @@
 
 echo $this->Form->create('News', array('type' => 'file'));
 echo $this->Form->input('title', array('label' => 'Название:'));
+echo $this->Form->input('keywords', array('label' => 'Ключевые слова(для поисковиков):'));
+echo $this->Form->input('description', array('label' => 'Описание(для поисковиков):'));
 echo $this->Form->input('body', array('label' => 'Текст:', 'id' => 'editor'));
 echo $this->Form->input('date', array('label' => 'Дата:'));?>
 
