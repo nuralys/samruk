@@ -6,7 +6,7 @@
 
 echo $this->Form->create('Link');
 echo $this->Form->input('title', array('label' => 'Название:'));
-echo $this->Form->input('link', array('label' => 'Ссылка:', 'placeholder' => 'http://astanacreative.kz'));
+echo $this->Form->input('link', array('label' => 'Ссылка:', 'placeholder' => 'http://astanacreative.kz', 'type' => 'text'));
 echo $this->Form->end('Сохранить');
 ?>
 
