@@ -86,7 +86,9 @@ class NewsController extends AppController{
 		$news = $this->News->find('all', array(
 			'fields' => array('id', 'title')
 			));
-
-		$this->set(compact('post', 'news'));
+		$title_for_layout = $post['News']['title'];
+		$meta['description'] = $post['News']['description'];
+		$meta['keywords'] = $post['News']['keywords'];
+		$this->set(compact('post', 'news', 'title_for_layout', 'meta'));
 	}
 }
